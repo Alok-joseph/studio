@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html class=no-js lang=de>
+
+<head>
+    <!--Meta section-->
+    <meta charset=utf-8>
+    <meta content='IE=edge,chrome=1' http-equiv=X-UA-Compatible>
+    <meta content='width=device-width,initial-scale=1' name=viewport>
+    <meta content='meta content' name=description>
+    <meta content='Make Studio' property='og:title'>
+    <meta content='meta content' property='og:description'>
+    <meta content='https://make.studio/assets/images/share/move.gif' property='og:image'>
+    <link rel=apple-touch-icon sizes=57x57 href="/apple-touch-icon-57x57.png">
+    <link rel=apple-touch-icon sizes=60x60 href="/apple-touch-icon-60x60.png">
+    <link rel=apple-touch-icon sizes=72x72 href="/apple-touch-icon-72x72.png">
+    <link rel=apple-touch-icon sizes=76x76 href="/apple-touch-icon-76x76.png">
+    <link rel=apple-touch-icon sizes=114x114 href="/apple-touch-icon-114x114.png">
+    <link rel=apple-touch-icon sizes=120x120 href="/apple-touch-icon-120x120.png">
+    <link rel=apple-touch-icon sizes=144x144 href="/apple-touch-icon-144x144.png">
+    <link rel=apple-touch-icon sizes=152x152 href="/apple-touch-icon-152x152.png">
+    <link rel=apple-touch-icon sizes=180x180 href="/apple-touch-icon-180x180.png">
+    <link rel=icon type="image/png" href="/favicon-16x16.png" sizes=16x16>
+    <link rel=icon type="image/png" href="/favicon-32x32.png" sizes=32x32>
+    <link rel=icon type="image/png" href="/favicon-96x96.png" sizes=96x96>
+    <link rel=icon type="image/png" href="/favicon-194x194.png" sizes=194x194>
+    <link rel=icon type="image/png" href="/android-chrome-192x192.png" sizes=192x192>
+    <link rel=manifest href="/manifest.json">
+    <link rel=mask-icon href="/safari-pinned-tab.svg" color="#0a0a0a">
+    <meta name=msapplication-TileColor content="#0a0a0a">
+    <meta name=msapplication-TileImage content="/mstile-144x144.png">
+    <meta name=theme-color content="#ffffff">
+    <title> Studio</title>
+    <script>
+        /*! modernizr 3.3.1 (Custom Build) | MIT *
+         * http://modernizr.com/download/?-classlist-cssgradients-csstransforms3d-flexbox-touchevents-setclasses !*/
+        ! function(e, t, n) {
+            function r(e, t) {
+                return typeof e === t
+            }
+
+            function s() {
+                var e, t, n, s, o, i, a;
+                for (var f in y)
+                    if (y.hasOwnProperty(f)) {
+                        if (e = [], t = y[f], t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length))
+                            for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                        for (s = r(t.fn, "function") ? t.fn() : t.fn, o = 0; o < e.length; o++) i = e[o], a = i.split("."), 1 === a.length ? Modernizr[a[0]] = s : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), Modernizr[a[0]][a[1]] = s), w.push((s ? "" : "no-") + a.join("-"))
+                    }
+            }
+
+            function o(e) {
+                var t = C.className,
+                    n = Modernizr._config.classPrefix || "";
+                if (b && (t = t.baseVal), Modernizr._config.enableJSClass) {
+                    var r = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                    t = t.replace(r, "$1" + n + "js$2")
+                }
+                Modernizr._config.enableClasses && (t += " " + n + e.join(" " + n), b ? C.className.baseVal = t : C.className = t)
+            }
+
+            function i() {
+                return "function" != typeof t.createElement ? t.createElement(arguments[0]) : b ? t.createElementNS.call(t, "http://www.w3.org/2000/svg", arguments[0]) : t.createElement.apply(t, arguments)
+            }
+
+            function a() {
+                var e = t.body;
+                return e || (e = i(b ? "svg" : "body"), e.fake = !0), e
+            }
+
+            function f(e, n, r, s) {
+                var o, f, l, u, d = "modernizr",
+                    p = i("div"),
+                    c = a();
+                if (parseInt(r, 10))
+                    for (; r--;) l = i("div"), l.id = s ? s[r] : d + (r + 1), p.appendChild(l);
+                return o = i("style"), o.type = "text/css", o.id = "s" + d, (c.fake ? c : p).appendChild(o), c.appendChild(p), o.styleSheet ? o.styleSheet.cssText = e : o.appendChild(t.createTextNode(e)), p.id = d, c.fake && (c.style.background = "", c.style.overflow = "hidden", u = C.style.overflow, C.style.overflow = "hidden", C.appendChild(c)), f = n(p, e), c.fake ? (c.parentNode.removeChild(c), C.style.overflow = u, C.offsetHeight) : p.parentNode.removeChild(p), !!f
+            }
+
+            function l(e, t) {
+                return !!~("" + e).indexOf(t)
+            }
+
+            function u(e) {
+                return e.replace(/([A-Z])/g, function(e, t) {
+                    return "-" + t.toLowerCase()
+                }).replace(/^ms-/, "-ms-")
+            }
+
+            function d(t, r) {
+                var s = t.length;
+                if ("CSS" in e && "supports" in e.CSS) {
+                    for (; s--;)
+                        if (e.CSS.supports(u(t[s]), r)) return !0;
+                    return !1
+                }
+                if ("CSSSupportsRule" in e) {
+                    for (var o = []; s--;) o.push("(" + u(t[s]) + ":" + r + ")");
+                    return o = o.join(" or "), f("@supports (" + o + ") { #modernizr { position: absolute; } }", function(e) {
+                        return "absolute" == getComputedStyle(e, null).position
+                    })
+                }
+                return n
+            }
+
+            function p(e) {
+                return e.replace(/([a-z])-([a-z])/g, function(e, t, n) {
+                    return t + n.toUpperCase()
+                }).replace(/^-/, "")
+            }
+
+            function c(e, t, s, o) {
+                function a() {
+                    u && (delete k.style, delete k.modElem)
+                }
+                if (o = r(o, "undefined") ? !1 : o, !r(s, "undefined")) {
+                    var f = d(e, s);
+                    if (!r(f, "undefined")) return f
+                }
+                for (var u, c, m, h, g, v = ["modernizr", "tspan"]; !k.style;) u = !0, k.modElem = i(v.shift()), k.style = k.modElem.style;
+                for (m = e.length, c = 0; m > c; c++)
+                    if (h = e[c], g = k.style[h], l(h, "-") && (h = p(h)), k.style[h] !== n) {
+                        if (o || r(s, "undefined")) return a(), "pfx" == t ? h : !0;
+                        try {
+                            k.style[h] = s
+                        } catch (y) {}
+                        if (k.style[h] != g) return a(), "pfx" == t ? h : !0
+                    }
+                return a(), !1
+            }
+
+            function m(e, t) {
+                return function() {
+                    return e.apply(t, arguments)
+                }
+            }
+
+            function h(e, t, n) {
+                var s;
+                for (var o in e)
+                    if (e[o] in t) return n === !1 ? e[o] : (s = t[e[o]], r(s, "function") ? m(s, n || t) : s);
+                return !1
+            }
+
+            function g(e, t, n, s, o) {
+                var i = e.charAt(0).toUpperCase() + e.slice(1),
+                    a = (e + " " + z.join(i + " ") + i).split(" ");
+                return r(t, "string") || r(t, "undefined") ? c(a, t, s, o) : (a = (e + " " + E.join(i + " ") + i).split(" "), h(a, t, n))
+            }
+
+            function v(e, t, r) {
+                return g(e, n, n, t, r)
+            }
+            var y = [],
+                x = {
+                    _version: "3.3.1",
+                    _config: {
+                        classPrefix: "",
+                        enableClasses: !0,
+                        enableJSClass: !0,
+                        usePrefixes: !0
+                    },
+                    _q: [],
+                    on: function(e, t) {
+                        var n = this;
+                        setTimeout(function() {
+                            t(n[e])
+                        }, 0)
+                    },
+                    addTest: function(e, t, n) {
+                        y.push({
+                            name: e,
+                            fn: t,
+                            options: n
+                        })
+                    },
+                    addAsyncTest: function(e) {
+                        y.push({
+                            name: null,
+                            fn: e
+                        })
+                    }
+                },
+                Modernizr = function() {};
+            Modernizr.prototype = x, Modernizr = new Modernizr;
+            var w = [],
+                C = t.documentElement,
+                b = "svg" === C.nodeName.toLowerCase(),
+                S = x._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : [];
+            x._prefixes = S;
+            var _ = x.testStyles = f;
+            Modernizr.addTest("touchevents", function() {
+                var n;
+                if ("ontouchstart" in e || e.DocumentTouch && t instanceof DocumentTouch) n = !0;
+                else {
+                    var r = ["@media (", S.join("touch-enabled),("), "heartz", ")", "{#modernizr{top:9px;position:absolute}}"].join("");
+                    _(r, function(e) {
+                        n = 9 === e.offsetTop
+                    })
+                }
+                return n
+            });
+            var T = "Moz O ms Webkit",
+                z = x._config.usePrefixes ? T.split(" ") : [];
+            x._cssomPrefixes = z;
+            var P = {
+                elem: i("modernizr")
+            };
+            Modernizr._q.push(function() {
+                delete P.elem
+            });
+            var k = {
+                style: P.elem.style
+            };
+            Modernizr._q.unshift(function() {
+                delete k.style
+            });
+            var E = x._config.usePrefixes ? T.toLowerCase().split(" ") : [];
+            x._domPrefixes = E, x.testAllProps = g, x.testAllProps = v, Modernizr.addTest("flexbox", v("flexBasis", "1px", !0)), Modernizr.addTest("cssgradients", function() {
+                for (var e, t = "background-image:", n = "gradient(linear,left top,right bottom,from(#9f9),to(white));", r = "", s = 0, o = S.length - 1; o > s; s++) e = 0 === s ? "to " : "", r += t + S[s] + "linear-gradient(" + e + "left top, #9f9, white);";
+                Modernizr._config.usePrefixes && (r += t + "-webkit-" + n);
+                var a = i("a"),
+                    f = a.style;
+                return f.cssText = r, ("" + f.backgroundImage).indexOf("gradient") > -1
+            });
+            var j = "CSS" in e && "supports" in e.CSS,
+                N = "supportsCSS" in e;
+            Modernizr.addTest("supports", j || N), Modernizr.addTest("csstransforms3d", function() {
+                var e = !!v("perspective", "1px", !0),
+                    t = Modernizr._config.usePrefixes;
+                if (e && (!t || "webkitPerspective" in C.style)) {
+                    var n, r = "#modernizr{width:0;height:0}";
+                    Modernizr.supports ? n = "@supports (perspective: 1px)" : (n = "@media (transform-3d)", t && (n += ",(-webkit-transform-3d)")), n += "{#modernizr{width:7px;height:18px;margin:0;padding:0;border:0}}", _(r + n, function(t) {
+                        e = 7 === t.offsetWidth && 18 === t.offsetHeight
+                    })
+                }
+                return e
+            }), Modernizr.addTest("classlist", "classList" in C), s(), o(w), delete x.addTest, delete x.addAsyncTest;
+            for (var A = 0; A < Modernizr._q.length; A++) Modernizr._q[A]();
+            e.Modernizr = Modernizr
+        }(window, document);
+    </script>
+    
+    <link href="../assets/styles/main-8bc7215d.css" rel=stylesheet /> </head>
+
+<body>
+    <!---->
+    <header class='Menu js-Menu u-posFixed'>
+        <div class='Menu-bar js-Menu-bar u-bgColorWhite u-colorBlack u-phVwAlt' data-scroll-header>
+            <div class='Grid Grid--withGutter'>
+                <div class='Grid-cell u-md-size1of4 u-lg-size1of2'>
+                    <div class='Grid Grid--withGutter'>
+                        <div class='Grid-cell u-sm-sizeFill'>
+                            <h1 class='Menu-title u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="/de/#studio"><span class=js-Menu-title> Make Studio </span> </a> </h1>
+                        </div>   
+                    </div>
+                </div>
+                <div class='Grid-cell u-md-hidden u-lg-hidden'>
+                    <div class='Menu-background js-Menu-background'></div>
+                    <!--navigation bar-->
+                </div>
+                <div class='Grid-cell u-md-size3of4 u-lg-size1of2'>
+                    <nav class='Menu-items u-md-flexGrow3 u-lg-flexGrow1' id=menu>
+                        <ul class='Menu-list u-md-flex u-md-flexJustifyBetween u-lg-flex u-lg-flexJustifyBetween'>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="/de/#studio">Studio </a> </li>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="#work">Work </a> </li>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="#services">Services </a> </li>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="/de/#clients">Clients </a> </li>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="/de/#jobs">Jobs </a> </li>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="/de/#contact">Contact </a> </li>
+                            <li class='Menu-item u-fontMenuAlt'> <a class="Menu-link js-Menu-link js-ScrollSpy" href="/de/#newsletter">Studio </a> </li>
+                        </ul>
+                        <div class=Menu-close> <button class='Menu-button Button js-Menu-close'> <span class=u-hiddenVisually> close menu </span> <svg class=svg-Make_Website_Icons_F4_Black-02-dims> <use aria-label='' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#Make_Website_Icons_F4_Black-02' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </button>                            </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class='u-pt80 u-pb80 u-phVwAlt' id=studio>
+        <div class='Grid Grid--withGutter'>
+            <div class='Grid-cell u-md-before1of4 u-lg-before1of2 u-md-size3of4 u-lg-size1of2'>
+                <p class='u-fontBig u-normalizeBig'> This studio for strategic branding and interdisciplinary design solutions based in Hamburg. We create new visual experiences and help our clients move big ideas forward. </p>
+            </div>
+        </div>
+    </section>
+    <!--work-->
+    <section id=work>
+        <div class=u-phVw>
+            <div class=Grid>
+                <div class='Grid-cell u-lg-size2of3'>
+                    <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/spiegel-47269105.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                        <div class='Teaser-border u-posAbsolute'></div>
+                        <div class=FlexEmbed>
+                            <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                            <div class=FlexEmbed-content>
+                                <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                    <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'>THE MIRROR </h3>
+                                    <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                        <p>A turning point after 25 years of SPIEGEL Online – we have the digital one <a href="#">the MIRROR</a> characters due to the series' popularity, which extends beyond its native Japan, and has been referenced 
+                                            pokemon <a href="#">To the case</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='Grid-cell u-size1of2 u-lg-size1of3 u-lg-flexOrderFirst'>
+                    <div class=Grid>
+                        <div class=Grid-cell>
+                            <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/hhey-daa2ebfe.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                <div class='Teaser-border u-posAbsolute'></div>
+                                <div class=FlexEmbed>
+                                    <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                    <div class=FlexEmbed-content>
+                                        <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                            <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> doraemon </h3>
+                                            <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                                <p> doraemon is a Japanese manga series written and illustrated by Fujiko F. Fujio. The manga was first serialized in December 1969, with  <a href="#">doraemon</a> its 1,345 individual chapters compiled into 45</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=Grid-cell>
+                            <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/ffeel-8d881799.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                <div class='Teaser-border u-posAbsolute'></div>
+                                <div class=FlexEmbed>
+                                    <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                    <div class=FlexEmbed-content>
+                                        <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                            <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> nobita </h3>
+                                            <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                                <p> is a fictional character in the Doraemon anime and manga series created by Fujiko Fujio, he is widely popular in doraemon mangas <a >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='Grid-cell u-size1of2 u-lg-size1of3 u-lg-flexOrderLast'>
+                    <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/banovo-bd1b6e94.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                        <div class='Teaser-border u-posAbsolute'></div>
+                        <div class=FlexEmbed>
+                            <div class='FlexEmbed-ratio FlexEmbed-ratio--2by3'></div>
+                            <div class=FlexEmbed-content>
+                                <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                    <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> pokemon </h3>
+                                    <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                        <p>Along with Doraemon, Nobita is considered to be one of the most popular  like doraemon nobita  <a href="#">nobita</a>, pokemon is amazing to </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='Grid-cell u-lg-size2of3'>
+                    <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/deutschlandfunk-b77cf54b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                        <div class='Teaser-border u-posAbsolute'></div>
+                        <div class=FlexEmbed>
+                            <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                            <div class=FlexEmbed-content>
+                                <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                    <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> naruto </h3>
+                                    <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                        <p>Naruto (Japanese: NARUTO) is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming then. Hokage, the leader </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id=js-work>
+                <div class=Grid>
+                    <div class='Grid-cell u-size1of2'>
+                        <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/affenzahn-shoes-b24bbc20.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                            <div class='Teaser-border u-posAbsolute'></div>
+                            <div class=FlexEmbed>
+                                <div class='FlexEmbed-ratio FlexEmbed-ratio--2by3'></div>
+                                <div class=FlexEmbed-content>
+                                    <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                        <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> uzamak </h3>
+                                        <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                            <p>Naruto Uzumak is the titular protagonist of the manga Naruto, created by Masashi  <a href="#"></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='Grid-cell u-size1of2'>
+                        <div class=Grid>
+                            <div class=Grid-cell>
+                                <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/ship-d1da120c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                    <div class='Teaser-border u-posAbsolute'></div>
+                                    <div class=FlexEmbed>
+                                        <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                        <div class=FlexEmbed-content>
+                                            <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                                <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> Boruto Uzumaki </h3>
+                                                <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                                    <p>Boruto Uzumaki s a fictional character created by manga  Masashi Kishimoto</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=Grid-cell>
+                                <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/finanztip-55ffff18.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                    <div class='Teaser-border u-posAbsolute'></div>
+                                    <div class=FlexEmbed>
+                                        <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                        <div class=FlexEmbed-content>
+                                            <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                                <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> Finanztip </h3>
+                                                <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor inciduntLorem ipsum dolor sit amet, consectetur </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=Grid-cell>
+                        <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/stayery-card-015e0131.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                            <div class='Teaser-border u-posAbsolute'></div>
+                            <div class=FlexEmbed>
+                                <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                <div class=FlexEmbed-content>
+                                    <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                        <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> peace </h3>
+                                        <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt <a href="https://www.stayery.de/mobile-app/">App</a> und <a href="https://www.stayery.de/">Website</a> für die Serviced
+                                                Lorem ipsum dolor sit amet,  <a href="#"> sed eiusmod</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='Grid-cell u-size1of2'>
+                        <div class=Grid>
+                            <div class=Grid-cell>
+                                <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/vorum-bc4fa434.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                    <div class='Teaser-border u-posAbsolute'></div>
+                                    <div class=FlexEmbed>
+                                        <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                        <div class=FlexEmbed-content>
+                                            <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                                <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> Lorem</h3>
+                                                <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                                    <p>Lorem ipsum dolor sit amet<a href="#">Website</a> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=Grid-cell>
+                                <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/quantum-focus-5dd23322.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                    <div class='Teaser-border u-posAbsolute'></div>
+                                    <div class=FlexEmbed>
+                                        <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3'></div>
+                                        <div class=FlexEmbed-content>
+                                            <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                                <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> Quantum </h3>
+                                                <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit <a href="#">Website</a> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='Grid-cell u-size1of2'>
+                        <div class='Teaser Teaser--hasMedia js-Teaser u-posRelative'> <img alt="" class="Teaser-image u-posAbsolute lazyload" data-src="../assets/images/work/makegoods-23c675fa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                            <div class='Teaser-border u-posAbsolute'></div>
+                            <div class=FlexEmbed>
+                                <div class='FlexEmbed-ratio FlexEmbed-ratio--2by3'></div>
+                                <div class=FlexEmbed-content>
+                                    <div class='Teaser-content u-flex u-flexCol u-flexJustifyCenter'>
+                                        <h3 class='Teaser-headline u-fontBigAlt u-normalizeBigAlt u-pb32'> Make Goods </h3>
+                                        <div class='u-fontBigAlt u-normalizeBigAlt u-fontMarkdown'>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt <a href="#">ase study</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class='u-pt80 u-pb80 u-phVwAlt'>
+            <div class='Grid Grid--alignMiddle Grid--withGutter'>
+                <div class='Grid-cell u-sm-size1of2 u-sm-before1of4 u-sm-after1of4 u-md-size1of2 u-lg-size4of12 u-lg-before1of12 u-lg-after1of12'>
+                    <div class='Studio-wrapImageSwitch u-sm-mb80'>
+                        <div class='u-fontBeta u-normalizeBeta'>
+                            <div class='ImageSwitch js-ImageSwitch u-posRelative u-inlineBlock'>
+                                <div class='ImageSwitch-item u-posAbsolute'> <svg class=svg-Make_Website_Victory_F4-01-dims> <use aria-label='' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#Make_Website_Victory_F4-01' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg>                                    </div>
+                                <div class='ImageSwitch-item u-posAbsolute'> <svg class=svg-Make_Website_Victory_F4-02-dims> <use aria-label='' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#Make_Website_Victory_F4-02' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg>                                    </div>
+                                <h2 class='ImageSwitch-text u-fontBeta'> WE<br> Not <br>Want<br>war! </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='Grid-cell u-md-size1of2 u-lg-size6of12'>
+                    <p class='u-fontBig u-normalizeBig'> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt
+                        Lorem  </p>
+                </div>
+            </div>
+        </section>
+  
+        <div class='Bodymovin js-Bodymovin js-Bodymovin-boundingBox u-posAbsolute svg-Make_Website_Eyes_F4-01-dims' data-options='{"delay":2000,"pause":5000}'></div>
+        <div class='Bodymovin js-Bodymovin js-Bodymovin-boundingBox u-posAbsolute svg-Make_Website_Eyes_F4-01-dims' data-options='{"delay":4000,"pause":3000}'></div>
+        <div class='Bodymovin js-Bodymovin js-Bodymovin-boundingBox u-posAbsolute svg-Make_Website_Eyes_F4-01-dims' data-options='{"delay":4500,"pause":5000}'></div>
+        <div class='Bodymovin js-Bodymovin js-Bodymovin-boundingBox u-posAbsolute svg-Make_Website_Eyes_F4-01-dims' data-options='{"delay":7000,"pause":4000}'></div>
+        <div class=u-pb52>
+            <h2 class='u-fontGamma u-normalizeGamma u-lg-before1of12 u-lg-after1of12'> <span class=js-Bodymovin-boundingBox> By studio </span> </h2>
+        </div>
+        <div class='Grid Grid--withGutter'>
+            <div class='Grid-cell u-size1of2 u-lg-size4of12 u-lg-before1of12 u-lg-after1of12'>
+                <div class='js-Bodymovin-boundingBox u-fontBigAlt u-fontBigAltMgB2 u-normalizeBigAlt'>
+                    <h3 class='u-fontBigAlt u-fwBold'> Strategie </h3>
+                    <p class=u-fontBigAlt> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed  </p>
+                </div>
+                <div class='js-Bodymovin-boundingBox u-fontBigAlt u-fontBigAltMgB2 u-normalizeBigAlt'>
+                    <h3 class='u-fontBigAlt u-fwBold'> Identity </h3>
+                    <p class=u-fontBigAlt> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt </p>
+                </div>
+                <div class='js-Bodymovin-boundingBox u-fontBigAlt u-normalizeBigAlt'>
+                    <h3 class='u-fontBigAlt u-fwBold'> Print </h3>
+                    <p class=u-fontBigAlt> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt </p>
+                </div>
+            </div>
+            <div class='Grid-cell u-size1of2 u-lg-size4of12 u-lg-before1of12 u-lg-after1of12'>
+                <div class='js-Bodymovin-boundingBox u-fontBigAlt u-fontBigAltMgB2 u-normalizeBigAlt'>
+                    <h3 class='u-fontBigAlt u-fwBold'> Digital </h3>
+                    <p class=u-fontBigAlt>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut </p>
+                </div>
+                <div class='js-Bodymovin-boundingBox u-fontBigAlt u-normalizeBigAlt'>
+                    <h3 class='u-fontBigAlt u-fwBold'> sasuke </h3>
+                    <p class=u-fontBigAlt>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='u-pt80 u-phVwAlt' id=clients>
+        <div class='Grid Grid--withGutter'>
+            <div class='Grid-cell u-md-before1of4 u-md-size3of4 u-lg-before1of2 u-lg-size1of2'>
+                <h2 class='u-fontGamma u-normalizeGamma u-pb40'> #Studio </h2>
+                <p class='u-fontBig u-normalizeBig u-pb80'>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid </p>
+            </div>
+        </div>
+        <ul class='Grid Clients'>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo01-dims> <use aria-label='DER SPIEGEL' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo01' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo02-dims> <use aria-label=Melitta role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo02' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo03-dims> <use aria-label=Finanztip role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo03' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo04-dims> <use aria-label=Deutschlandradio role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo04' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo05-dims> <use aria-label='Rheinische Post' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo05' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo06-dims> <use aria-label=Nivea role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo06' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo07-dims> <use aria-label=Quantum role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo07' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo08-dims> <use aria-label=pinqponq role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo08' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo09-dims> <use aria-label='Stiftung Historische Museen Hamburg' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo09' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo10-dims> <use aria-label='manager magazin' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo10' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo11-dims> <use aria-label=Spryker role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo11' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-size1of3 u-lg-size1of4 Clients-item'>
+                <div class=FlexEmbed>
+                    <div class=FlexEmbed-ratio></div>
+                    <div class=FlexEmbed-content> <svg class=svg-logo12-dims> <use aria-label='Stiftung Neue Verantwortung' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#logo12' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class='u-pt80 u-pb80 u-phVwAlt' id=jobs>
+        <div class='Grid Grid--withGutter'>
+            <div class=Grid-cell>
+                <h2 class='u-fontGamma u-normalizeGamma u-pb52'> Work with Make </h2>
+                <div class='u-fontBig u-normalizeBig u-pb52 u-fontMarkdown'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor inciduntLorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt
+                        Lorem ipsum dolor sit 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <ul class='Grid Grid--withGutter'>
+            <li class='Grid-cell u-md-size1of3 u-lg-size1of3'>
+                <div class='u-fontNormal u-normalizeNormal u-sm-pb52'>
+                    <h3 class='u-fontNormal u-fwBold u-fontNormalMgb'> Senior Brand Designer </h3>
+                    <div class='u-fontNormal u-fontMarkdown'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod lorem paris germany frabce <a href="#">Weiterlesen</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-md-size1of3 u-lg-size1of3'>
+                <div class='u-fontNormal u-normalizeNormal u-sm-pb52'>
+                    <h3 class='u-fontNormal u-fwBold u-fontNormalMgb'> Senior Digital Designer </h3>
+                    <div class='u-fontNormal u-fontMarkdown'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod lorem paris germany frabce lorem paris germaby india <a href="#">Weiterlesen</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class='Grid-cell u-md-size1of3 u-lg-size1of3'>
+                <div class='u-fontNormal u-normalizeNormal u-sm-pb52'>
+                    <h3 class='u-fontNormal u-fwBold u-fontNormalMgb'> Initiativbewerbung </h3>
+                    <div class='u-fontNormal u-fontMarkdown'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod lorem paris germany frabce html css js pythoib haskell</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id=contact>
+        <div class='Map u-posRelative'>
+            <div class=FlexEmbed>
+                <div class='FlexEmbed-ratio FlexEmbed-ratio--4by3 FlexEmbed-lg-ratio--2by1'></div>
+                <div class=FlexEmbed-content>
+                    <div class='Map-embed js-Map'></div>
+                </div>
+            </div>
+            <div class='Map-text u-plVwAlt'>
+                <h2 class='u-fontGamma u-normalizeGamma u-sm-pt40 u-pb40'> Studio is here most of the time: </h2> <address class='u-fontBig u-normalizeBig u-fontMarkdown'> <p>1 Pennsylvania Ave<br/> 	19087 Hamburg<br/> +00 / 00 / 00 03 09 00<br/> <a href="#">& +00 / 00 / 00 03 09 00 ;</a></p> </address>                </div>
+        </div>
+    </section>
+            </div>
+        </div>
+    </section>
+   
+            <footer class='Footer u-md-pt32 u-lg-pt32 u-pb32'>
+                <div class='Grid Grid--withGutterHalf'>
+                    <div class='Grid-cell u-md-size1of4 u-lg-size1of4 u-md-flexOrderLast u-lg-flexOrderLast'>
+                        <div class=Footer-wrapSvg> <svg class=svg-Make_Website_Hands_F4-01-dims> <use aria-label='' role=img xlink:href='/assets/svg/output/symbol/svg/sprite.symbol-77d91cac.svg#Make_Website_Hands_F4-01' xmlns:xlink='http://www.w3.org/1999/xlink'></use> </svg> </div>
+                    </div>
+                    <div class='Grid-cell u-md-size3of4 u-lg-size3of4'>
+                        <div class='u-flex u-flexJustifyBetween u-sm-pt32'>
+                            <div class='Footer-text u-fontNormal u-normalizeNormal u-textNoWrap u-fontFooter'>
+                                <!--paste yourbgoogle maps in href="#" -->
+                                <p><a href="#"> India<br/> kasmir<br/> jammu </a></p>
+                            </div>
+                            <div class='Footer-text u-fontNormal u-normalizeNormal u-textNoWrap u-fontFooter'>
+                                <!--place your phone numer in href="tekl:#"-->
+                                <p><a href="tel:#">+0 / 00 / 000 00 00 0</a><br/> <a href="#">&+0 / 00 / 000 00 00 0;</a><br/>                                    <a href="#">Impressum</a>, <a href="#">D</a></p>
+                            </div>
+                            <div class='Footer-text Footer-text--meta u-fontNormal u-normalizeNormal u-textNoWrap u-fontFooter u-lg-size1of3'>
+                                <p><a href="#">Facebook</a><br/> <a href="#">Instagram</a><br/> <a href="#">Behance</a> <a class="Fun js-Fun" data-options="{&quot;text&quot;: &quot;&quot;, &quot;isFun&quot;: true}">Add Some Fun</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="../assets/scripts/main-c87b8e8e.js"></script>
+</body>
+
+</html>
+
+<!-- thank you for choosing this template -->
