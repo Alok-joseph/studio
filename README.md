@@ -1,2 +1,3 @@
 # studio
-studio is a creative agency website template
+## -------------------------------
+studio is the best website template we
