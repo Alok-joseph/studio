@@ -13,3 +13,5 @@ Similarly, in the studio template , there is work section You can showcase your 
 ![screenshot](https://user-images.githubusercontent.com/98444143/163546275-5e52fcad-00a6-42a8-8c33-f995c91bfd61.png)
 
 job section which is simple and nice .which shows the available jobs to the user then comes a contact section which is best to showcase where your studio is and the studio phone number the comes left tilt footer bar which grabs the attention of the user
+
+you can also show your social medias this template is perfect for creative agency studios
