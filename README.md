@@ -1,6 +1,6 @@
-# studio
--------------------------------
-## studio – Ready-to-Use Clean HTML Website Template for agency
+# studio[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FAlok-joseph%2Fstudio)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FAlok-joseph%2Fstudio)
+
+
 
 this website template offers a tempting eye-soothing outlook but it presents a responsive layout with maximum flexibility. For instance, the vivid color combination alongside the creative carousel slider will satisfy the visitor’s eyes. The homepage has nothing much to scroll but it has enough to lock users attention. 
 
