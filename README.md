@@ -23,3 +23,13 @@ Clone the project
 ```bash
   git clone https://github.com/Alok-joseph/studio/
 ```
+## Authors
+
+- [@Alok-joseph](https://github.com/Alok-joseph)
+
+## 🚀 About Me
+ I'm a Coder who designs
+ 
+ ## 🛠 Skills
+Javascript, HTML, CSS
+
