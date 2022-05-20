@@ -15,3 +15,11 @@ you can also show your social medias this template is perfect for creative agenc
 
 ## Screenshot
 ![screenshot](https://user-images.githubusercontent.com/98444143/163546275-5e52fcad-00a6-42a8-8c33-f995c91bfd61.png)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Alok-joseph/studio/
+```
